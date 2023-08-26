@@ -524,6 +524,34 @@ button:hover {
   #nextButton{
 	  right:5px;
   }
+ #prevButton1{
+	  left:5px;
+  }
+  #nextButton1{
+	  right:5px;
+  }
+  
+ #prevButton2{
+	  left:5px;
+  }
+  #nextButton2{
+	  right:5px;
+  }
+  
+ #prevButton3{
+	  left:5px;
+  }
+  #nextButton3{
+	  right:5px;
+  }
+  
+  
+ #prevButton4{
+	  left:5px;
+  }
+  #nextButton4{
+	  right:5px;
+  }
 .col-4 h2{
 	font-family:'Poppins',sans-serif;
 	font-size:12px;

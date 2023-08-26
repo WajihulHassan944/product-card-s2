@@ -41,8 +41,9 @@
       <option value="">Sort by price</option>
       </select>
   </div>
+ 
   <div class="row">
-    <div class="col-4">
+   <div class="col-4">
      <div class="image-container"> <img src="https://i.ibb.co/zSznSM7/img1.png" alt="" />  </div>
 	<h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
 	 <h2>NEW</h2>
@@ -52,10 +53,9 @@
       <button class="orderButton" data-product="T-shirt 1">Buy Product</button>
 	</div>
 
-   </div>
 
-  <div class="row">
-    <div class="col-4">
+   
+   <div class="col-4">
      <div class="image-container"> <img src="https://i.ibb.co/wLMnLPK/img5.png" alt="" />   </div>
       <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
 	<h2>NEW</h2>

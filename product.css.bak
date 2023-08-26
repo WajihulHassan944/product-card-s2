@@ -377,6 +377,7 @@ h1{
 @media (max-width:700px){    
 	.orderFormContainer{
 		flex-direction:column;
+	
 	}
 	.orderForm2{
 		flex-basis:100%;
@@ -544,6 +545,14 @@ button:hover {
   #nextButton3{
 	  right:5px;
   }
+  
+  
+ #prevButton4{
+	  left:5px;
+  }
+  #nextButton4{
+	  right:5px;
+  }
 .col-4 h2{
 	font-family:'Poppins',sans-serif;
 	font-size:12px;
@@ -673,8 +682,8 @@ button:hover {
 @media (max-width:400px){    
 	.orderFormContainer{
 		flex-direction:column;
-		position:absolute;
-		min-height:100vh;
+		position:fixed;
+		height:100vh;
 	
 	}
 	.orderForm2{
@@ -691,6 +700,10 @@ button:hover {
 		min-height:150vh;
 	}
 	
+	
+#part2{
+	margin-top:-30px;
+}	
 	
 	
 .modal img{
@@ -713,8 +726,6 @@ button:hover {
  }
 
   
-	
-	
 #part1{
 	flex-basis:100%;
 	
@@ -724,6 +735,51 @@ button:hover {
   width:100%;
   margin-left:0;
 }
+
+
+
+
+#orderForm h3 {
+  margin: 0 0 10px;
+  margin-bottom:15px;
+}
+
+#orderForm input[type="text"],
+#orderForm button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius:5px;
+  font-size:12px;
+}
+#orderForm h5{
+	font-size:17px;
+	font-weight:500;
+	font-size:18px;
+	margin-top:20px;
+	margin-bottom:10px;
+	
+}
+#orderForm select{
+	padding:10px;
+}
+#orderForm input[type="text"] {
+  border: 1px solid #ccc;
+}
+
+#orderForm button[type="submit"] {
+  background-color: #1773b0;
+  color: #fff8f0;
+  border: none;
+  width:35%;
+  align-items:left;
+  margin-left:65%;
+}
+
+#orderForm button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
 
 
 }

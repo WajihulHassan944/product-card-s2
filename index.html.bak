@@ -48,7 +48,7 @@
 	<h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
 	 <h2>NEW</h2>
 	  <h4>T-shirt</h4>
-      <p>Price: $25.00</p>
+      <p>Price: $20.00</p>
 	  
       <button class="orderButton" data-product="T-shirt 1">Buy Product</button>
 	</div>
@@ -60,7 +60,7 @@
       <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
 	<h2>NEW</h2>
 	  <h4>T-shirt</h4>
-      <p>Price: $25.00</p>
+      <p>Price: $20.00</p>
       <button class="orderButton" data-product="T-shirt 5">Buy Product</button>
 	 </div>
 
@@ -69,7 +69,7 @@
       <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
 	<h2>NEW</h2>
 	  <h4>T-shirt</h4>
-      <p>Price: $25.00</p>
+      <p>Price: $20.00</p>
       <button class="orderButton" data-product="T-shirt 6">Buy Product</button>
 	</div>
 
@@ -82,7 +82,7 @@
     <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
 	<h2>NEW</h2>
 	  <h4 id="dynamich44">T-shirt</h4>
-      <p>Price: $25.00</p>
+      <p id="dynamicp44">Price: $20.00</p>
       <button class="orderButton" data-product="Shirt">Buy Product</button>
 	 </div>
 
@@ -103,7 +103,7 @@
     <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
 	<h2>NEW</h2>
 	  <h4 id="dynamich4">T-shirt</h4>
-      <p>Price: $25.00</p>
+      <p id="dynamicp4">Price: $20.00</p>
       <button class="orderButton" data-product="Shirt">Buy Product</button>
 	 </div>
 	 
@@ -116,7 +116,7 @@
     <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
 	<h2>NEW</h2>
 	  <h4 id="dynamich41">T-shirt</h4>
-      <p>Price: $25.00</p>
+      <p id="dynamicp41">Price: $20.00</p>
       <button class="orderButton" data-product="Shirt">Buy Product</button>
 	 </div>
 
@@ -128,7 +128,7 @@
     <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
 	<h2>NEW</h2>
 	  <h4 id="dynamich42">T-shirt</h4>
-      <p>Price: $25.00</p>
+      <p id="dynamicp42">Price: $20.00</p>
       <button class="orderButton" data-product="Shirt">Buy Product</button>
 	 </div>
 
@@ -140,7 +140,7 @@
     <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
 	<h2>NEW</h2>
 	  <h4 id="dynamich43">T-shirt</h4>
-      <p>Price: $25.00</p>
+      <p id="dynamicp43">Price: $20.00</p>
       <button class="orderButton" data-product="Shirt">Buy Product</button>
 	 </div>
 
@@ -219,6 +219,14 @@ const h4Element2 = document.querySelector("#dynamich42"); // Select the h4 eleme
 const h4Element3 = document.querySelector("#dynamich43"); // Select the h4 element
 const h4Element4 = document.querySelector("#dynamich44"); // Select the h4 element
 
+
+
+const p4Element = document.querySelector("#dynamicp4"); // Select the p element
+const p4Element1 = document.querySelector("#dynamicp41"); // Select the p element
+const p4Element2 = document.querySelector("#dynamicp42"); // Select the p element
+const p4Element3 = document.querySelector("#dynamicp43"); // Select the p element
+const p4Element4 = document.querySelector("#dynamicp44"); // Select the p element
+
 let currentImageIndex = 0;
 
 
@@ -226,8 +234,12 @@ function showImage(index) {
   sliderImage.src = images[index]; 
    if (index === images.length - 1) {
     h4Element.textContent = "Hoodie";
+	p4Element.textContent = "$25.00";
+  
   } else {
     h4Element.textContent = "T-shirt";
+	p4Element.textContent = "$25.00";
+  
   }
 }
 
@@ -238,8 +250,12 @@ function showImage1(index) {
   
    if (index === images1.length - 1) {
     h4Element1.textContent = "Hoodie";
+	p4Element1.textContent = "$25.00";
+  
   } else {
     h4Element1.textContent = "T-shirt";
+	p4Element1.textContent = "$25.00";
+  
   }
 }
 
@@ -250,8 +266,12 @@ function showImage2(index) {
   
    if (index === images2.length - 1 || index === images2.length - 2 ) {
     h4Element2.textContent = "Hoodie";
+	p4Element2.textContent = "$25.00";
+  
   } else {
     h4Element2.textContent = "T-shirt";
+	p4Element2.textContent = "$25.00";
+  
   }
 }
 
@@ -261,8 +281,12 @@ function showImage3(index) {
   
    if (index === images3.length - 1) {
     h4Element3.textContent = "Hoodie";
+	p4Element3.textContent = "$25.00";
+  
   } else {
     h4Element3.textContent = "T-shirt";
+	p4Element3.textContent = "$25.00";
+  
   }
 }
 
@@ -273,8 +297,10 @@ function showImage4(index) {
   
    if (index === images4.length - 1) {
     h4Element4.textContent = "Hoodie";
+	p4Element4.textContent = "$25.00";
   } else {
     h4Element4.textContent = "T-shirt";
+	p4Element4.textContent = "$20.00";
   }
 }
 
@@ -499,7 +525,7 @@ loadingAnimation.style.display = "block";
 	imageUrl: document.getElementById("imageURL").value,
   };
 
-  fetch("https://backend-for-experiences.onrender.com/submit-order", {
+  fetch("https://easy-dungarees-bee.cyclic.cloud/submit-order", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

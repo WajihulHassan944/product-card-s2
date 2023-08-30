@@ -55,15 +55,6 @@
 
 
    
-   <div class="col-4">
-     <div class="image-container"> <img src="https://i.ibb.co/wLMnLPK/img5.png" alt="" />   </div>
-      <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
-	<h2>NEW</h2>
-	  <h4>T-shirt</h4>
-      <p>Price: $20.00</p>
-      <button class="orderButton" data-product="T-shirt 5">Buy Product</button>
-	 </div>
-
     <div class="col-4">
      <div class="image-container"> <img src="https://i.ibb.co/4M5hPgR/img6.png" alt="" />   </div>
       <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
@@ -87,6 +78,18 @@
 	 </div>
 
    
+ <div class="col-4">
+     <div  class="image-container image-containerSlider"> <img id="sliderImage7" src="" alt="" /> 
+	  <button id="prevButton7" class="slider-button"><i class="fa fa-chevron-left"></i></button>
+      <button id="nextButton7" class="slider-button"><i class="fa fa-chevron-right"></i></button>
+	 </div>
+    <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
+	<h2>NEW</h2>
+	  <h4 id="dynamich7">T-shirt</h4>
+      <p id="dynamicp7">Price: $20.00</p>
+      <button class="orderButton" data-product="Shirt">Buy Product</button>
+	 </div>
+
 
   </div>
 
@@ -147,6 +150,43 @@
     </div>
 
 
+
+
+
+
+
+<div class="row">
+	<div class="col-4">
+     <div  class="image-container image-containerSlider"> <img id="sliderImage5" src="img2.jpeg" alt="" /> 
+	  <button id="prevButton5" class="slider-button"><i class="fa fa-chevron-left"></i></button>
+      <button id="nextButton5" class="slider-button"><i class="fa fa-chevron-right"></i></button>
+	 </div>
+    <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
+	<h2>NEW</h2>
+	  <h4 id="dynamich5">T-shirt</h4>
+      <p id="dynamicp5">Price: $20.00</p>
+      <button class="orderButton" data-product="Shirt">Buy Product</button>
+	 </div>
+	 
+	 
+	 <div class="col-4">
+     <div  class="image-container image-containerSlider"> <img id="sliderImage6" src="" alt="" /> 
+	  <button id="prevButton6" class="slider-button"><i class="fa fa-chevron-left"></i></button>
+      <button id="nextButton6" class="slider-button"><i class="fa fa-chevron-right"></i></button>
+	 </div>
+    <h3><i class="fa fa-eye" aria-hidden="true"></i></h3>
+	<h2>NEW</h2>
+	  <h4 id="dynamich6">T-shirt</h4>
+      <p id="dynamicp6">Price: $20.00</p>
+      <button class="orderButton" data-product="Shirt">Buy Product</button>
+	 </div>
+
+    </div>
+
+
+
+
+
   </div>
 
   </div>
@@ -190,11 +230,34 @@ const images4 = [
 ];
 
 
+const images5 = [
+  "https://i.ibb.co/3py9Tbj/238206-A9-0566-4-DF8-B137-8706-BD94-AF6-E-removebg-preview.png",
+  "https://i.ibb.co/NWTsp2D/0-C401-DCE-A215-4-DA6-8-C65-EDE0-BBB7632-F-removebg-preview-1.png",
+];
+
+const images6 = [
+  "https://i.ibb.co/C1hYNrN/7-EE1-D07-E-AF4-A-4377-9-D06-A3-DCFE641977-removebg-preview.png",
+  "https://i.ibb.co/sKtW4ng/A2-C869-B7-8-C2-B-44-F9-A884-808-A53-F9877-B-removebg-preview.png",
+  "https://i.ibb.co/RvHm6hD/B69-B768-A-5-ECE-43-A3-A7-C5-5-DA4048-BF1-F9-removebg-preview.png",
+  "https://i.ibb.co/wCCwSYx/F93-E41-FB-8-B79-4-CE7-9-E04-74800-E6-DDFB0-removebg-preview.png",
+  "https://i.ibb.co/C89zFrv/B8-C3-FA9-C-985-B-45-D6-A453-5566-D130638-F-removebg-preview-1.png",
+];
+
+const images7 = [
+  "https://i.ibb.co/LZ2w9yN/01-F277-A3-BDF0-4-D30-871-E-53-BE63684-D88-removebg-preview.png",
+  "https://i.ibb.co/GnDB7NZ/C8-EF26-CB-B304-4-C9-B-82-A8-69420-CA33-D53-removebg-preview.png",
+  "https://i.ibb.co/5kdk933/CF9-D77-C6-0-C25-4076-9043-203-B0-CD30-A6-B-removebg-preview.png",
+];
+
+
 const sliderImage = document.getElementById("sliderImage");
 const sliderImage1 = document.getElementById("sliderImage1");
 const sliderImage2 = document.getElementById("sliderImage2");
 const sliderImage3 = document.getElementById("sliderImage3");
 const sliderImage4 = document.getElementById("sliderImage4");
+const sliderImage5 = document.getElementById("sliderImage5");
+const sliderImage6 = document.getElementById("sliderImage6");
+const sliderImage7 = document.getElementById("sliderImage7");
 
 const prevButton = document.getElementById("prevButton");
 const nextButton = document.getElementById("nextButton");
@@ -212,12 +275,24 @@ const nextButton3 = document.getElementById("nextButton3");
 const prevButton4 = document.getElementById("prevButton4");
 const nextButton4 = document.getElementById("nextButton4");
 
+const prevButton5 = document.getElementById("prevButton5");
+const nextButton5 = document.getElementById("nextButton5");
+
+const prevButton6 = document.getElementById("prevButton6");
+const nextButton6 = document.getElementById("nextButton6");
+
+const prevButton7 = document.getElementById("prevButton7");
+const nextButton7 = document.getElementById("nextButton7");
+
 
 const h4Element = document.querySelector("#dynamich4"); // Select the h4 element
 const h4Element1 = document.querySelector("#dynamich41"); // Select the h4 element
 const h4Element2 = document.querySelector("#dynamich42"); // Select the h4 element
 const h4Element3 = document.querySelector("#dynamich43"); // Select the h4 element
 const h4Element4 = document.querySelector("#dynamich44"); // Select the h4 element
+const h4Element5 = document.querySelector("#dynamich5"); // Select the h4 element
+const h4Element6 = document.querySelector("#dynamich6"); // Select the h4 element
+const h4Element7 = document.querySelector("#dynamich7"); // Select the h4 element
 
 
 
@@ -226,6 +301,9 @@ const p4Element1 = document.querySelector("#dynamicp41"); // Select the p elemen
 const p4Element2 = document.querySelector("#dynamicp42"); // Select the p element
 const p4Element3 = document.querySelector("#dynamicp43"); // Select the p element
 const p4Element4 = document.querySelector("#dynamicp44"); // Select the p element
+const p4Element5 = document.querySelector("#dynamicp5"); // Select the p element
+const p4Element6 = document.querySelector("#dynamicp6"); // Select the p element
+const p4Element7 = document.querySelector("#dynamicp7"); // Select the p element
 
 let currentImageIndex = 0;
 
@@ -304,6 +382,55 @@ function showImage4(index) {
   }
 }
 
+
+function showImage5(index) {
+  
+  sliderImage5.src = images5[index];
+  
+   if (index === images5.length - 1) {
+    h4Element5.textContent = "Hoodie";
+	p4Element5.textContent = "$25.00";
+  
+  } else {
+    h4Element5.textContent = "T-shirt";
+	p4Element5.textContent = "$20.00";
+  
+  }
+}
+
+
+function showImage6(index) {
+  
+  sliderImage6.src = images6[index];
+  
+   if (index === images6.length - 1) {
+    h4Element6.textContent = "Hoodie";
+	p4Element6.textContent = "$25.00";
+  
+  } else {
+    h4Element6.textContent = "T-shirt";
+	p4Element6.textContent = "$20.00";
+  
+  }
+}
+
+
+function showImage7(index) {
+  
+  sliderImage7.src = images7[index];
+  
+   if (index === images7.length - 1) {
+    h4Element7.textContent = "Hoodie";
+	p4Element7.textContent = "$25.00";
+  
+  } else {
+    h4Element7.textContent = "T-shirt";
+	p4Element7.textContent = "$20.00";
+  
+  }
+}
+
+
 prevButton.addEventListener("click", () => {
   currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
   showImage(currentImageIndex);
@@ -359,11 +486,47 @@ nextButton4.addEventListener("click", () => {
   showImage4(currentImageIndex);
 });
 
+
+prevButton5.addEventListener("click", () => {
+  currentImageIndex = (currentImageIndex - 1 + images5.length) % images5.length;
+  showImage5(currentImageIndex);
+});
+
+nextButton5.addEventListener("click", () => {
+  currentImageIndex = (currentImageIndex + 1) % images5.length;
+  showImage5(currentImageIndex);
+});
+
+
+prevButton6.addEventListener("click", () => {
+  currentImageIndex = (currentImageIndex - 1 + images6.length) % images6.length;
+  showImage6(currentImageIndex);
+});
+
+nextButton6.addEventListener("click", () => {
+  currentImageIndex = (currentImageIndex + 1) % images6.length;
+  showImage6(currentImageIndex);
+});
+
+
+prevButton7.addEventListener("click", () => {
+  currentImageIndex = (currentImageIndex - 1 + images7.length) % images7.length;
+  showImage7(currentImageIndex);
+});
+
+nextButton7.addEventListener("click", () => {
+  currentImageIndex = (currentImageIndex + 1) % images7.length;
+  showImage7(currentImageIndex);
+});
+
 showImage(currentImageIndex);
 showImage1(currentImageIndex);
 showImage2(currentImageIndex);
 showImage3(currentImageIndex);
 showImage4(currentImageIndex);
+showImage5(currentImageIndex);
+showImage6(currentImageIndex);
+showImage7(currentImageIndex);
 </script>
 
 

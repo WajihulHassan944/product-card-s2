@@ -207,7 +207,7 @@ const images1 = [
 ];
 
 const images2 = [
-  "https://i.ibb.co/3cxkrL9/img4.png",
+  "https://i.ibb.co/qFgQ8yG/26-DCAC88-34-DF-4-C62-9-F0-D-13-BCEC5-CB318-removebg-preview.png",
   "https://i.ibb.co/hstFWxL/6959-D118-1-EB9-4521-B767-A38-F97-E770-D3-removebg-preview.png",
   "https://i.ibb.co/ZW6HHL5/092-AA79-B-6-FE8-4-B46-BEF5-218323-C78121-removebg-preview.png",
   "https://i.ibb.co/QpWHwVj/56-CEE354-1374-492-B-A517-6-C5-B76924-E5-F-removebg-preview.png",
@@ -217,15 +217,15 @@ const images2 = [
 
 
 const images3 = [
-  "https://i.ibb.co/zJxG2QD/5-F72-B42-A-C2-F8-4-C5-C-918-D-80-FB32-FE4996-1.png",
+  "https://i.ibb.co/vs3YNpT/7-A2-BA5-B5-1600-4715-8-A60-01-D0-B4163-A22-removebg-preview.png",
   "https://i.ibb.co/DG3bzXq/D1-E3-B798-E138-44-B6-9-AE1-71-CEBE0-FFDAB-removebg-preview.png",
   "https://i.ibb.co/0Bt1hyN/FA3-D2-ECD-8-DA9-45-B7-8-D70-8201-AAD3302-F-removebg-preview.png",
   
 ];
 
 const images4 = [
-  "https://i.ibb.co/BCt4gDV/CFC887-A7-6-F2-C-40-B3-A13-B-AA85898505-D5-removebg-preview.png",
   "https://i.ibb.co/MBNypwZ/img8.png",
+  "https://i.ibb.co/BCt4gDV/CFC887-A7-6-F2-C-40-B3-A13-B-AA85898505-D5-removebg-preview.png",
   "https://i.ibb.co/dcBXhZK/ED50-F31-D-B313-4-B4-E-9969-1-E0307-EF0806-removebg-preview.png",
 ];
 
